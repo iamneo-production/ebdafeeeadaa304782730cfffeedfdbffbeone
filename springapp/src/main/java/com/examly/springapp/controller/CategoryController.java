@@ -8,25 +8,6 @@ import com.examly.springapp.repository.CategoryRepo;
 import java.util.List;
 
 
-// @RestController
-// public class CategoryController {
-
-//     @Autowired
-//     private  CategoryRepo categoryRepository;
-
-
-//     @GetMapping("/getAllcategory")
-//     public List<Category> getAllCategories() {
-//         return categoryRepository.findAll();
-//     }
-
-//     @PostMapping("/addcategory")
-//     public Category createCategory(@RequestBody Category category) {
-//         return categoryRepository.save(category);
-//     }
-
-//     // Define other CRUD operations for categories as needed
-// }
 
 
 import org.springframework.beans.factory.annotation.Autowired;
