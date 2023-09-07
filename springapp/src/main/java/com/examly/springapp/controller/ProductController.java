@@ -28,7 +28,16 @@ public class ProductController {
 
 
    
+    @GetMapping("/GetProductByProductId/{productId}")
+    public Optional<Product> getProductsById(@PathVariable int productId) {
+        return productRepository.findById(productId);
+    }
 
+    @GetMapping("/GetProductBycategoryId/{categoryid}")
+    public List<Product> getProductsByCategory(@PathVariable int categoryid) {
+        // Use the productRepository or your custom logic to retrieve products by category
+        return productRepository.findByCategory_Id(categoryid);
+    }
    
 
     // Define other CRUD operations for products as needed
